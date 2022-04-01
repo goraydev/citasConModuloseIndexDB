@@ -16,6 +16,9 @@ class App {
     }
 
     initApp() {
+        baseDatos();
+
+        
         mascotaInput.addEventListener('change', datosCita);
         propietarioInput.addEventListener('change', datosCita);
         telefonoInput.addEventListener('change', datosCita);
@@ -26,7 +29,6 @@ class App {
         //formulario para nuevas citas
         formulario.addEventListener('submit', nuevaCita);
 
-        baseDatos();
     }
 
 }
